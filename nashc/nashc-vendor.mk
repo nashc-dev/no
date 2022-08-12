@@ -1486,7 +1486,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/nashc/proprietary/vendor/lib/libperfctl_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfctl_vendor.so \
     vendor/realme/nashc/proprietary/vendor/lib/libpkm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpkm.so \
     vendor/realme/nashc/proprietary/vendor/lib/libpower_timer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpower_timer.so \
-    vendor/realme/nashc/proprietary/vendor/lib/libpowerhal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhal.so \
     vendor/realme/nashc/proprietary/vendor/lib/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhalwrap_vendor.so \
     vendor/realme/nashc/proprietary/vendor/lib/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpq_cust_base.so \
     vendor/realme/nashc/proprietary/vendor/lib/libpqframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpqframework.so \
@@ -1612,7 +1611,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/nashc/proprietary/vendor/lib64/APUWareXrpServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareXrpServer.so \
     vendor/realme/nashc/proprietary/vendor/lib64/AVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/AVCSecureVdecCA.so \
     vendor/realme/nashc/proprietary/vendor/lib64/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/VP9SecureVdecCA.so \
-    vendor/realme/nashc/proprietary/vendor/lib64/android.hardware.power-service-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.power-service-mediatek.so \
     vendor/realme/nashc/proprietary/vendor/lib64/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/arm.graphics-V1-ndk_platform.so \
     vendor/realme/nashc/proprietary/vendor/lib64/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_mali.so \
     vendor/realme/nashc/proprietary/vendor/lib64/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_meow.so \
@@ -2128,7 +2126,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/nashc/proprietary/vendor/lib64/libperfctl_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfctl_vendor.so \
     vendor/realme/nashc/proprietary/vendor/lib64/libpkm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpkm.so \
     vendor/realme/nashc/proprietary/vendor/lib64/libpower_timer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpower_timer.so \
-    vendor/realme/nashc/proprietary/vendor/lib64/libpowerhal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowerhal.so \
     vendor/realme/nashc/proprietary/vendor/lib64/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowerhalwrap_vendor.so \
     vendor/realme/nashc/proprietary/vendor/lib64/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpq_cust_base.so \
     vendor/realme/nashc/proprietary/vendor/lib64/libpqframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqframework.so \
@@ -2277,6 +2274,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/nashc/proprietary/vendor/lib64/vendor.trustonic.tee@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.trustonic.tee@1.1.so
 
 PRODUCT_PACKAGES += \
+    libpowerhal \
     libwifi-hal-mtk \
     ImsService \
     HotwordEnrollmentOKGoogleCORTEXM4 \
@@ -2291,7 +2289,6 @@ PRODUCT_PACKAGES += \
     manifest_hwcomposer \
     manifest_media_c2_V1_1_default \
     oplus_wifi_supplicant_device \
-    power-mtk \
     manifest_oplusSensor \
     manifest_oplus_charger \
     manifest_oplus_fingerprint

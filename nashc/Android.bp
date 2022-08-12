@@ -6,6 +6,26 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+	name: "libpowerhal",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libpowerhal.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libpowerhal.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libwifi-hal-mtk",
 	owner: "realme",
 	strip: {
@@ -137,15 +157,6 @@ prebuilt_etc_xml {
 	name: "oplus_wifi_supplicant_device",
 	owner: "realme",
 	src: "proprietary/vendor/etc/vintf/manifest/oplus_wifi_supplicant_device.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "power-mtk",
-	owner: "realme",
-	src: "proprietary/vendor/etc/vintf/manifest/power-mtk.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
