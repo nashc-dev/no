@@ -553,6 +553,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/nashc/proprietary/vendor/etc/.tp/thermal.off.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.off.conf \
     vendor/realme/nashc/proprietary/vendor/etc/FV-SAM-MTK2.dat:$(TARGET_COPY_OUT_VENDOR)/etc/FV-SAM-MTK2.dat \
     vendor/realme/nashc/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
+    vendor/realme/nashc/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2214:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2214 \
+    vendor/realme/nashc/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2214_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2214_ENUM \
     vendor/realme/nashc/proprietary/vendor/etc/audio_param/AudioParamOptions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions.xml \
     vendor/realme/nashc/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
     vendor/realme/nashc/proprietary/vendor/etc/audio_param/BtInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_AudioParam.xml \
